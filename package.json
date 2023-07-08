@@ -7,7 +7,7 @@
     "author": "R13zi",
     "url": "http://launcher.legionpixelmon.com.br/launcherlegion",
     "engines": {
-        "node": "^18.x.x"z
+        "node": "^18.x.x"
     },
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
