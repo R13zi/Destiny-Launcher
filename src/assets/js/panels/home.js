@@ -63,7 +63,7 @@ class Home {
                         <div class="news-content">
                             <div class="bbWrapper">
                                 <p>${News.content.replace(/\n/g, '</br>')}</p>
-                                <p class="news-author">Auteur,<span> ${News.author}</span></p>
+                                <p class="news-author">Autor,<span> ${News.author}</span></p>
                             </div>
                         </div>`
                     news.appendChild(blockNews);
@@ -254,7 +254,7 @@ class Home {
         let year = date.getFullYear()
         let month = date.getMonth() + 1
         let day = date.getDate()
-        let allMonth = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre']
+        let allMonth = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro']
         return { year: year, month: allMonth[month - 1], day: day }
     }
 }
