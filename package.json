@@ -1,13 +1,13 @@
 {
     "name": "Legion-Launcher",
     "preductname": "Legion Launcher",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "description": "launcher customizado Legion Pixelmon - Legion Studios 2023",
     "main": "src/app.js",
     "author": "R13zi",
     "url": "http://launcher.legionpixelmon.com.br/launcherlegion",
     "engines": {
-        "node": "^18.x.x"
+        "node": "^18.x.x"z
     },
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",

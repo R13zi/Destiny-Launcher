@@ -22,7 +22,7 @@ class Splash {
 
     async startAnimation() {
         let splashes = [
-            { "message": "Celestial Pixelmon", "author": "Celestial Pixelmon" },
+            { "message": "Legion Pixelmon", "author": "legionpixelmon" },
         ]
         let splash = splashes[Math.floor(Math.random() * splashes.length)];
         this.splashMessage.textContent = splash.message;
