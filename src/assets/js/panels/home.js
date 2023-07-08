@@ -24,6 +24,7 @@ class Home {
         this.initLaunch();
         this.initStatusServer();
         this.initBtn();
+        this.initSocialMedia();
     }
 
     async initNews() {
@@ -85,7 +86,33 @@ class Home {
             // news.appendChild(blockNews);
         }
     }
+    async initSocialMedia() {
+        let Youtube = document.querySelector('.social-youtube');
+        let Twitter = document.querySelector('.social-twitter');
+        let Instagram = document.querySelector('.social-insta');
+        let Discord = document.querySelector('.social-discord');
+        let Web = document.querySelector('.social-web');
 
+        Youtube.addEventListener('click', () => {
+            require('electron').shell.openExternal(this.config.social.youtube);
+        });
+        
+        Twitter.addEventListener('click', () => {
+            require('electron').shell.openExternal(this.config.social.twitter);
+        });
+
+        Instagram.addEventListener('click', () => {
+            require('electron').shell.openExternal(this.config.social.insta);
+        });
+        
+        Discord.addEventListener('click', () => {
+            require('electron').shell.openExternal(this.config.social.discord);
+        });
+
+        Web.addEventListener('click', () => {
+            require('electron').shell.openExternal(this.config.social.web);
+        });
+    }
     async initLaunch() {
         document.querySelector('.play-btn').addEventListener('click', async () => {
             let urlpkg = pkg.user ? `${pkg.url}/${pkg.user}` : pkg.url;
@@ -96,7 +123,7 @@ class Home {
             let launcherSettings = (await this.database.get('1234', 'launcher')).value;
 
             let playBtn = document.querySelector('.play-btn');
-            let info = document.querySelector(".text-download")
+            let info = document.querySelector(".text-download");
             let progressBar = document.querySelector(".progress-bar")
 
             if (Resolution.screen.width == '<auto>') {
@@ -144,7 +171,7 @@ class Home {
 
             launch.on('progress', (progress, size) => {
                 progressBar.style.display = "block"
-                document.querySelector(".text-download").innerHTML = `Téléchargement ${((progress / size) * 100).toFixed(0)}%`
+                document.querySelector(".text-download").innerHTML = `Baixando ${((progress / size) * 100).toFixed(0)}%`
                 ipcRenderer.send('main-window-progress', { progress, size })
                 progressBar.value = progress;
                 progressBar.max = size;
@@ -152,7 +179,7 @@ class Home {
 
             launch.on('check', (progress, size) => {
                 progressBar.style.display = "block"
-                document.querySelector(".text-download").innerHTML = `Vérification ${((progress / size) * 100).toFixed(0)}%`
+                document.querySelector(".text-download").innerHTML = `Verificando ${((progress / size) * 100).toFixed(0)}%`
                 progressBar.value = progress;
                 progressBar.max = size;
             });
@@ -207,12 +234,12 @@ class Home {
 
         if (!serverPing.error) {
             nameServer.textContent = this.config.status.nameServer;
-            serverMs.innerHTML = `<span class="green">En ligne</span> - ${serverPing.ms}ms`;
+            serverMs.innerHTML = `<span class="green">Online</span>`;
             online.classList.toggle("off");
             playersConnected.textContent = serverPing.playersConnect;
         } else if (serverPing.error) {
-            nameServer.textContent = 'Serveur indisponible';
-            serverMs.innerHTML = `<span class="red">Hors ligne</span>`;
+            nameServer.textContent = 'Em manuntenção';
+            serverMs.innerHTML = `<span class="red">Offline</span>`;
         }
     }
 
