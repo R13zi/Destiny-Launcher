@@ -5,7 +5,7 @@
     "description": "launcher customizado Destiny Pixelmon - Destiny Studios 2023",
     "main": "src/app.js",
     "author": "R13zi",
-    "url": "http://launcher.destinypixelmon.com.br/",
+    "url": "http://launcher.destinypixelmon.com.br/destinylauncher",
     "engines": {
         "node": "^18.x.x"
     },
