@@ -1,11 +1,11 @@
 {
-    "name": "Legion-Launcher",
-    "preductname": "Legion Launcher",
+    "name": "Destiny-Launcher",
+    "preductname": "Destiny Launcher",
     "version": "2.0.3",
-    "description": "launcher customizado Legion Pixelmon - Legion Studios 2023",
+    "description": "launcher customizado Destiny Pixelmon - Destiny Studios 2023",
     "main": "src/app.js",
     "author": "R13zi",
-    "url": "http://launcher.legionpixelmon.com.br/launcherlegion",
+    "url": "http://launcher.destinypixelmon.com.br/destinylauncher",
     "engines": {
         "node": "^18.x.x"
     },
@@ -34,6 +34,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/R13zi/Legion-Launcher.git"
+        "url": "git+https://github.com/R13zi/Destiny-Launcher.git"
     }
 }

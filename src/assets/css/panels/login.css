@@ -22,7 +22,7 @@
     border: none;
     margin: 2% 0;
     height: 2em;
-    border: 2px solid rgb(255, 128, 0);
+    border: 2px solid #8a36ea;
     background: #303030;
     box-shadow: 0 0 5px #303030;
     color: #FFFFFF;
@@ -31,13 +31,13 @@
 }
 
 .login-type-btn:hover {
-    box-shadow: 0 0 5px rgb(255, 128, 0);
-    border: 2px solid rgb(255, 128, 0);
-    background: rgb(255, 128, 0);
+    box-shadow: 0 0 5px #8a36ea;
+    border: 2px solid #8a36ea;
+    background: #8a36ea;
 }
 
 .login-type-btn:disabled {
-    border: 2px solid rgb(255, 128, 0);
+    border: 2px solid #8a36ea;
     background: #303030;
     box-shadow: 0 0 5px #303030;
     cursor: default;
@@ -101,7 +101,7 @@
     border: none;
     margin: 2% 0;
     height: 2em;
-    border: 2px solid rgb(255, 128, 0);
+    border: 2px solid #8a36ea;
     background: #303030;
     box-shadow: 0 0 5px #303030;
     color: #FFFFFF;
@@ -110,9 +110,9 @@
 }
 
 .login-btn:hover {
-    border: 2px solid rgb(255, 128, 0);
-    background: rgb(255, 128, 0);
-    box-shadow: 0 0 5px rgb(255, 128, 0);
+    border: 2px solid #8a36ea;
+    background: #8a36ea;
+    box-shadow: 0 0 5px #8a36ea;
 }
 
 .cancel {

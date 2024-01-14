@@ -84,7 +84,7 @@
     width: 160px;
     height: 37px;
     border-radius: 10px;
-    border: 2px solid rgb(255, 128, 0);
+    border: 2px solid #8a36ea;
     background: #303030;
     font: normal normal bold 20px/25px Poppins;
     color: #F7F0F8;
@@ -93,8 +93,8 @@
   }
   
   .play-btn:hover {
-    background: rgb(255, 128, 0);
-    box-shadow: 0 0 8px rgb(255, 128, 0);
+    background: #8a36ea;
+    box-shadow: 0 0 8px #8a36ea;
 }
 
 .download-content {
