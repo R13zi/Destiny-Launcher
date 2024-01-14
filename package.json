@@ -1,7 +1,7 @@
 {
     "name": "Destiny-Launcher",
     "preductname": "Destiny Launcher",
-    "version": "2.0.3",
+    "version": "3.0.0",
     "description": "launcher customizado Destiny Pixelmon - Destiny Studios 2023",
     "main": "src/app.js",
     "author": "R13zi",
