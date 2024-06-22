@@ -3,28 +3,28 @@
         <button class="tab-btn-css tab-btn active-tab-btn default-tab-btn">Contas</button>
         <button class="tab-btn-css tab-btn">Java</button>
         <button class="tab-btn-css tab-btn">Launcher</button>
-        <button class="tab-btn-css save-tabs-btn">Aplicar</button>
+        <button class="tab-btn-css save-tabs-btn">Salvar</button>
     </div>
 
     <div class="tabs-settings-content active-tab-content">
         <div class="center-align">
-            <button class="add-account">Adicionar outra conta</button>
+            <button class="add-account">Adicionar uma conta</button>
             <div class="accounts"></div>
         </div>
     </div>
 
     <div class="tabs-settings-content">
         <div class="settings-content-scroll">
-            <div class="title-settings">Memoria alocada.</div>
+            <div class="title-settings">Quantidade de RAM.</div>
             <div class="java-settings">
                 <div class="information">
-                    A Quantidade de Memoria alocada no modpack é um dos principais fatores que alteram o desempenho.<br>
-                    Lembre se de não alocar toda a sua memoria ram.
+                    Quantidade de RAM alocada para o seu jogo, uma quantia maior aumentará o desempenho do seu jogo.<br>
+                    Observe que você deve evitar colocar muita quantidade, caso contrário, pode causar perdas de desempenho de outros aplicativos.
                     <br><br>
                     <b>- RAM Máxima:</b> 
-                    Este valor indica a memoria RAM total utilizada no modpack, na qual o seu minecraft se limitará a utilizar durante sua execução (dica: caso tenha 8gb RAM + aloque entre 3-4 gb ram para ter um bom desempenho). 
-                    Para computadores com menos memoria RAM, recomendamos utilizar 2gb de ram, e desabilitar a textura do servidor assim que logar.<br><br>
-                    <b>- RAM Mínima :</b> A quantia de memoria RAM minima, é o quanto seu jogo irá consumir no minimo, recomendo ficar entre 1 e 2 gb para computadores com 8gb RAM + e para computadores com menos, não passar de 1gb RAM.
+                    Indica a quantidade total de RAM alocada ao seu jogo. Recomenda -se não exceder 50% da quantidade total de RAM presente no seu PC para que possa funcionar corretamente. 
+                    Se o seu computador tiver mais de 8 GB de RAM, recomendamos que você aloque 3 GB. Se o seu computador tiver 4 GB ou menos, não aloque mais de 2 GB.<br><br>
+                    <b>- RAM Mínima :</b> Indica a quantidade mínima de RAM alocada quando você inicia seu jogo. Recomenda -se não colocar mais de 3 GB para esse valor.
                 </div>
                 <div class="ram-info">
                     <div class="memory-slider" min="0.5" max="8" step="0.5">
@@ -60,15 +60,15 @@
                     <label 
                       for="launcher-close">
                       <div class="checkround"></div>
-                    </label> Fechar o Launcher quando o jogo executar</br>
+                    </label> Fecha o Launcher quando iniciar o jogo</br>
 
-                     <input 
+                    <!-- <input 
                       type="checkbox" 
                       class="checkbox-settings checkbox-close-all" 
                       id="launcher-close-all">
                     <label for="launcher-close-all" class="checkbox-close-all">
                       <div class="checkround checkbox-close-all"></div>
-                    </label> Fechar o jogo caso o launcher seja fechado.</br>
+                    </label> Fermer le jeu si le launcher est fermé.</br> -->
 
                     <input 
                       type="checkbox" 
@@ -77,7 +77,7 @@
                     <label 
                       for="launcher-open">
                       <div class="checkround"></div>
-                  </label> Manter o launcher aberto após executar o jogo.
+                  </label> Manter o launcher aberto quando iniciar o jogo.
                 </div>
             </div>
         </div>

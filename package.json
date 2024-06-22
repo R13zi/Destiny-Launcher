@@ -1,7 +1,7 @@
 {
     "name": "Destiny-Launcher",
     "preductname": "Destiny Launcher",
-    "version": "3.0.0",
+    "version": "3.0.1",
     "description": "launcher customizado Destiny Pixelmon - Destiny Studios 2023",
     "main": "src/app.js",
     "author": "R13zi",
@@ -11,8 +11,7 @@
     },
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
-        "build": "node build.js --build",
-        "icon": "node build.js --icon=https://raw.githubusercontent.com/luuxis/Selvania-Launcher/master/src/assets/images/icon.png",
+        "build": "node build.js --obf=true",
         "dev": "nodemon --exec npm start"
     },
     "license": "CC0",
@@ -21,15 +20,14 @@
     },
     "dependencies": {
         "electron-updater": "^5.0.1",
-        "jimp": "^0.22.8",
-        "minecraft-java-core": "^3.5.0",
-        "node-fetch": "^2.6.7",
-        "png2icons": "^2.0.1"
+        "minecraft-java-core": "^3.1.1",
+        "node-fetch": "^2.6.7"
     },
     "devDependencies": {
         "cross-env": "^7.0.3",
-        "electron": "^20.0.0",
-        "electron-builder": "^23.0.3",
+        "electron": "^24.1.1",
+        "electron-builder": "^24.2.1",
+        "javascript-obfuscator": "^4.0.2",
         "nodemon": "^2.0.16"
     },
     "repository": {

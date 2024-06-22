@@ -22,30 +22,27 @@
     border: none;
     margin: 2% 0;
     height: 2em;
-    border: 2px solid #8a36ea;
-    background: #303030;
-    box-shadow: 0 0 5px #303030;
+    background-color: #9b5de5;
+    box-shadow: 0 0 5px #9b5de5;
     color: #FFFFFF;
     font: normal normal bold 19px/29px Poppins;
     cursor: pointer;
 }
 
 .login-type-btn:hover {
-    box-shadow: 0 0 5px #8a36ea;
-    border: 2px solid #8a36ea;
-    background: #8a36ea;
+    background-color: #ff499d;
+    box-shadow: 0 0 5px #ff499d;
 }
 
 .login-type-btn:disabled {
-    border: 2px solid #8a36ea;
-    background: #303030;
-    box-shadow: 0 0 5px #303030;
+    background-color: #9b5de5;
+    box-shadow: 0 0 5px #9b5de5;
     cursor: default;
 }
 
 .login-type-btn:disabled:hover {
-    background-color: #ffffff00;
-    box-shadow: 0 0 5px #ffffff00;
+    background-color: #9b5de5;
+    box-shadow: 0 0 5px #9b5de5;
 }
 
 .login-card-mojang {
@@ -58,7 +55,7 @@
     padding: 0 20px;
     font: normal normal bold 19px/29px Poppins;
     color: #E1E1E1;
-    border-radius:  5px;
+    border-radius: 15px;
     display: none;
 }
 
@@ -76,7 +73,7 @@
     letter-spacing: 2px;
     color: #fff;
     border: solid 0px rgba(0, 0, 0, 0);
-    border-radius: 10px;
+    border-radius: 30px;
     background-color: #373737;
     padding: 0.375rem 0.75rem;
 }
@@ -101,23 +98,21 @@
     border: none;
     margin: 2% 0;
     height: 2em;
-    border: 2px solid #8a36ea;
-    background: #303030;
-    box-shadow: 0 0 5px #303030;
+    background-color: #9b5de5;
+    box-shadow: 0 0 5px #9b5de5;
     color: #FFFFFF;
     font: normal normal bold 19px/29px Poppins;
     cursor: pointer;
 }
 
 .login-btn:hover {
-    border: 2px solid #8a36ea;
-    background: #8a36ea;
-    box-shadow: 0 0 5px #8a36ea;
+    background-color: #ff499d;
+    box-shadow: 0 0 5px #ff499d;
 }
 
 .cancel {
     border: none;
-    background-color: #121212;
+    background-color: #ffffff00;
     color: #F1F1F1;
     font: normal normal bold 19px/29px Poppins;
     cursor: pointer;
