@@ -15,30 +15,31 @@
     width: 160px;
     height: 37px;
     margin: auto 30px;
-    background: #9b5de5;
-    border: 4px solid #9b5de5;
+    border: 2px solid #8a36ea;
+    background: #303030;
     font: normal normal bold 20px/25px Poppins;
     cursor: pointer;
-    box-shadow: 0 0 5px #9b5de5;
+    box-shadow: 0 0 5px #303030;
     outline: none;
     color: #F7F0F8;
 }
 
 .tab-btn-css:hover {
-    background: #ff499d;
-    box-shadow: 0 0 5px #ff499d;
-    border: 2px solid #ff499d;
+    box-shadow: 0 0 5px #8a36ea;
+    border: 2px solid #8a36ea;
+    background: #8a36ea;
 }
 
 .active-tab-btn {
-    background: #ff499d;
-    border: 2px solid #ff499d;
-    box-shadow: 0 0 5px #ff499d;
+    border: 2px solid #8a36ea;
+    background: #303030;
+    box-shadow: 0 0 5px #303030;
 }
 
 .active-tab-btn:hover {
-    background: #ff499d;
-    box-shadow: 0 0 5px #ff499d;
+    border: 2px solid #8a36ea;
+    background: #8a36ea;
+    box-shadow: 0 0 5px #8a36ea;
 }
 
 .tabs-settings-content {
@@ -124,10 +125,11 @@
 
 .account {
     display: inline-block;
-    background: #9b5de5;
-    box-shadow: 0 0 5px #9b5de5;
-    border: 2px solid #9b5de5;
+    background: #303030;
+    box-shadow: 0 0 5px #303030;
+    border: 2px solid #8a36ea;
     font: normal normal bold 30px/40px Poppins;
+    color: #D1D1D1;
     width: 500px;
     height: 100px;
     margin: 1% 2%;
@@ -136,9 +138,9 @@
 }
 
 .account:hover {
-    background: #FF499D;
-    box-shadow: 0 0 5px #ff499d;
-    border: 2px solid #ff499d;
+    background: #8a36ea;
+    box-shadow: 0 0 5px #8a36ea;
+    border: 2px solid #8a36ea;
 }
 
 .account-image {
@@ -190,15 +192,15 @@
 }
 
 .active-account {
-    background: #FF499D;
-    border: 2px solid #ff499d;
-    box-shadow: 0 0 5px #ff499d;
+    background: #8a36ea;
+    border: 2px solid #8a36ea;
+    box-shadow: 0 0 5px #8a36ea;
 }
 
 .active-account:hover {
-    background: #FF499D;
-    box-shadow: 0 0 5px #ff499d;
-    border: 2px solid #ff499d;
+    background: #8a36ea;
+    box-shadow: 0 0 5px #8a36ea;
+    border: 2px solid #8a36ea;
 }
 
 
@@ -240,7 +242,7 @@
     width: 20px;
     height: 10px;
     background: #F1F1F1;
-    border: 4px solid #9b5de5;
+    border: 4px solid #8a36ea;
     transition: background-color .2s, border .2s;
     border-radius: 18px;
     cursor: pointer;
@@ -249,7 +251,7 @@
 .slider-touch-left span:after,
 .slider-touch-right span:after {
     content: attr(value);
-    color: #9b5de5;
+    color: #8a36ea;
     font: normal normal bold 12px/18px Poppins;
     white-space: nowrap;
     pointer-events: none;
@@ -277,7 +279,7 @@
     display: block;
     height: 100%;
     width: 0%;
-    background: #9b5de5;
+    background: #8a36ea;
     transition: background-color .2s;
 }
 
@@ -307,7 +309,7 @@
     font: normal normal bold 13px/20px Poppins;
     border-radius: 18px;
     padding: 8px 30px;
-    background-color: #9b5de5;
+    background-color: #8a36ea;
     cursor: pointer;
     margin-left: 20px;
     transition: color .2s, background-color .2s;
@@ -323,7 +325,7 @@
     font: normal normal bold 13px/20px Poppins;
     border-radius: 18px;
     padding: 8px 30px;
-    background-color: #9b5de5;
+    background-color: #8a36ea;
     cursor: pointer;
     margin-left: 20px;
     transition: color .2s, background-color .2s;
@@ -423,7 +425,7 @@
 
 .select {
     border-radius: 40px;
-    background-color: #9b5de5;
+    background-color: #8a36ea;
     font: normal normal normal 12px/18px Poppins;
     transition: color .2s, box-shadow .2s;
     border: none;
@@ -464,7 +466,7 @@
 }
 
 .checkbox-settings:checked+label {
-    background-color: #9b5de5;
+    background-color: #8a36ea;
 }
 
 .checkround {

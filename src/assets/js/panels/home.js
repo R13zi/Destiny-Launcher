@@ -24,6 +24,7 @@ class Home {
         this.initLaunch();
         this.initStatusServer();
         this.initBtn();
+        this.initSocialMedia();
     }
 
     async initNews() {
@@ -62,7 +63,7 @@ class Home {
                         <div class="news-content">
                             <div class="bbWrapper">
                                 <p>${News.content.replace(/\n/g, '</br>')}</p>
-                                <p class="news-author">Auteur,<span> ${News.author}</span></p>
+                                <p class="news-author">Autor,<span> ${News.author}</span></p>
                             </div>
                         </div>`
                     news.appendChild(blockNews);
@@ -85,17 +86,35 @@ class Home {
             // news.appendChild(blockNews);
         }
     }
+    async initSocialMedia() {
+        let Youtube = document.querySelector('.social-youtube');
+        let Twitter = document.querySelector('.social-twitter');
+        let Instagram = document.querySelector('.social-insta');
+        let Discord = document.querySelector('.social-discord');
+        let Web = document.querySelector('.social-web');
 
+        Youtube.addEventListener('click', () => {
+            require('electron').shell.openExternal(this.config.social.youtube);
+        });
+        
+        Twitter.addEventListener('click', () => {
+            require('electron').shell.openExternal(this.config.social.twitter);
+        });
+
+        Instagram.addEventListener('click', () => {
+            require('electron').shell.openExternal(this.config.social.insta);
+        });
+        
+        Discord.addEventListener('click', () => {
+            require('electron').shell.openExternal(this.config.social.discord);
+        });
+
+        Web.addEventListener('click', () => {
+            require('electron').shell.openExternal(this.config.social.web);
+        });
+    }
     async initLaunch() {
         document.querySelector('.play-btn').addEventListener('click', async () => {
-            let informationDiv = document.createElement('div');
-            let p = document.createElement('p');
-            p.innerHTML = `Caso seu download trave, reinicie o launcher!`;
-              informationDiv.classList.add('messageDownload');
-            let newsList = document.querySelector('.news-list');
-            newsList.innerHTML = ''
-            informationDiv.appendChild(p);
-            newsList.appendChild(informationDiv);
             let urlpkg = pkg.user ? `${pkg.url}/${pkg.user}` : pkg.url;
             let uuid = (await this.database.get('1234', 'accounts-selected')).value;
             let account = (await this.database.get(uuid.selected, 'accounts')).value;
@@ -195,7 +214,7 @@ class Home {
                 progressBar.style.display = "none"
                 info.style.display = "none"
                 playBtn.style.display = "block"
-                info.innerHTML = `Verificando`
+                info.innerHTML = `Vérification`
                 new logger('Launcher', '#7289da');
                 console.log('Close');
             });
@@ -235,7 +254,7 @@ class Home {
         let year = date.getFullYear()
         let month = date.getMonth() + 1
         let day = date.getDate()
-        let allMonth = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre']
+        let allMonth = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro']
         return { year: year, month: allMonth[month - 1], day: day }
     }
 }

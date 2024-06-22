@@ -35,13 +35,7 @@ function addAccount(data) {
         <div class="account-uuid">${data.uuid}</div>
         <div class="account-delete"><div class="icon-account-delete icon-account-delete-btn"></div></div>
     `
-
     document.querySelector('.accounts').appendChild(div);
-    if(document.querySelectorAll('.account').length === 3) {
-      const buttonAdd = document.getElementsByClassName('add-account')[0];
-      buttonAdd.classList.add('button-add-disabled');
-      buttonAdd.disabled = true;
-    };
 }
 
 function accountSelect(uuid) {
@@ -55,5 +49,5 @@ function accountSelect(uuid) {
 }
 
 function headplayer(pseudo) {
-    document.querySelector(".player-head").style.backgroundImage = `url(https://mc-heads.net/body/${pseudo})`;
+    document.querySelector(".player-head").style.backgroundImage = `url(https://minotar.net/helm/${pseudo}/100)`;
 }
